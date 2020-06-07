@@ -16,8 +16,9 @@
 <body data-spy="scroll" data-target="#navbarResponsive">
     <!-- NAVIGATION AREA -->
     <!-- using @media for medium -->
+    <div id="home">
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top navbar-dark bg-dark">
-      <a href="#" class="navbar-brand padding-nav-left"><img src="img/flower-logo.png"></a>
+      <a href="#" class="navbar-brand padding-nav-left"><img id="logo-img" src="img/flower-logo.png"></a>
       <!-- Toggle Button when page is too small or mobile -->
       <!-- Use same Data Target as in the body -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
@@ -55,29 +56,29 @@
 
       <!-- LANDING PAGE -->
       <!-- Reponsive image background --> 
+      
       <div class="landing">
         <div class="home-wrap">
           <div class="home-inner"></div>
         </div>
       </div>
+    </div>
 
       <!-- Landing Page Text --> 
       <div class="caption text-center">
-        <h1>Let's make world beautiful</h1>
-        <h1>Your favorite florist course</h1>
+        <h1 id="main-h1">Making world beautiful</h1>
+        <h3 id="main-h3">Your favorite florist course</h3>
         <a class="btn btn-outline-light btn-lg" href="#course">LET'S START</a>
       </div>
       <!-- ENDLANDING PAGE -->
 
-      <!-- HOME SECTION -->
-      <div id="home">
-
-      </div>
-      <!-- END HOME SECTION -->
-
       <!-- COURSE SECTION -->
-      <div id="course" class="offset">
-
+      <div id="course">
+        <div class="col-12 text-center narrow">
+          <h1>Our Best In the World Florist Course</h1>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et</p>
+          <a class="btn btn-secondary btn-md" href="#">GET THE COURSE</a>
+        </div>
       </div>
       <!-- END COURSE SECTION -->
 
