@@ -15,23 +15,21 @@
     <title>Portfolio</title>
 </head>
 <body data-spy="scroll" data-target="#navbarResponsive">
+
     <!-- NAVIGATION AREA -->
     <!-- using @media for medium -->
     <div id="home">
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top navbar-dark bg-dark">
-      <a href="#" class="navbar-brand padding-nav-left"><img src="img/flower-logo.png" class="logo-img"></a>
-      <!-- Toggle Button when page is too small or mobile -->
-      <!-- Use same Data Target as in the body -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#"><img src="img/flower-logo.png" class="logo-img" id="logo-nav"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- Collapsable Menu -->
-        <!-- Use same Data Target as in the body for id -->
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <!-- ml-auto / set navigation to the right-hand side -->
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link " href="#home">Home</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#course">Course</a>
@@ -48,19 +46,21 @@
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
-              </div>
-            </li>
           </ul>
         </div>
-      </nav>
+      </nav>   
+
+
+    
+      </div>
       <!-- END NAVIGATION AREA  -->
 
       <!-- LANDING PAGE -->
       <!-- Reponsive image background --> 
       
-      <div class="landing">
-        <div class="home-wrap">
-          <div class="home-inner"></div>
+    <div class="landing">
+      <div class="home-wrap">
+        <div class="home-inner"></div>
         </div>
       </div>
     </div>
@@ -76,7 +76,7 @@
       <!-- COURSE SECTION -->
       <div id="course">
         <div class="col-12 text-center narrow course-pd">
-          <h1>Our Best In the World Florist Course</h1>
+          <h1 id="h1-course">Our Best In the World Florist Course</h1>
           <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et</p>
           <a class="btn btn-secondary btn-md" href="#" target="_blank">GET THE COURSE</a>
         </div>
@@ -93,7 +93,7 @@
               <h3 class="h3-page-top">Features</h3>
               <div class="heading-underline"></div>
 
-              <div class="row text-center">
+              <div class="row text-cente">
 
                 <!-- Display 3 columns -->
                 <div class="col-md-4">
@@ -132,19 +132,18 @@
       </div>
       <!-- END FEATURES SECTION -->
 
-
       <!-- RESOURCES SECTION -->
       <div id="resources" class="offset">
-        <div class="fixed-background">
+        <div class="fixed-background fixedImg">
           <div class="row dark">
             <div class="narrow">
             <div class="col-12 text-center">
-              <h3 class="h3-page-top">Skills you will learn</h3>
+              <h3 class="h3-page-top" id="skills-h3">Skills you will learn</h3>
             <div class="heading-underline"></div>
 
             <div class="row">
             <div class="col-md-4">
-              <h3 class="h3-smaller">consectetur adipiscing</h3>
+              <h3 class="h3-smaller h3-smaller-skills">consectetur adipiscing</h3>
               <!-- custom styling -->
               <div class="feature">
                 <!-- Font Awesome Icon, use data-fa-transform for better sizing  -->
@@ -154,7 +153,7 @@
             </div>
 
             <div class="col-md-4">
-              <h3 class="h3-smaller">consectetur adipiscing</h3>
+              <h3 class="h3-smaller h3-smaller-skills">consectetur adipiscing</h3>
               <!-- custom styling -->
               <div class="feature">
                 <!-- Font Awesome Icon, use data-fa-transform for better sizing  -->
@@ -164,28 +163,22 @@
             </div>
             
             <div class="col-md-4">
-              <h3 class="h3-smaller">consectetur adipiscing</h3>
+              <h3 class="h3-smaller h3-smaller-skills">consectetur adipiscing</h3>
               <!-- custom styling -->
               <div class="feature">
                 <!-- Font Awesome Icon, use data-fa-transform for better sizing  -->
                 <i class="fas fa-sun fa-3x" data-fa-transform="shrink-3 down-4"></i>
               </div> 
                 <p>Dignissim sodales ut eu sem integer vitae justo eget magna. Tellus integer feugiat scelerisque varius morbi. Tincidunt lobortis feugiat vivamus at augue eget. Dolor sed viverra ipsum nunc aliquet.</p>
-            </div>   
+            </div>  
           </div>         
 
           </div> <!-- narrow end -->
 
           </div> <!-- End row dark -->
-
-          <!-- fixed BG image styling -->
-          <div class="fixed-wrap">
-            <div class="fixed">
-
-            </div>
-          </div>
-        </div> <!-- fixed-background -->
       </div>
+    </div>
+  </div>
       <!-- END RESOURCES SECTION -->
 
 
@@ -196,27 +189,29 @@
         <div class="jumbotron">
           <!-- heading -->
           <div class="col-12 text-center">
-            <h3 class="h3-page-top">Reviews</h3>
+            <h3 class="h3-page-top" id="h3-reviews">Reviews</h3>
             <div class="heading-underline"></div>
           </div>  
 
           <!-- reviews content -->
-          <div class="row">
+          <div class="row clients">
             <!-- 2 columns -->
             <div class="col-md-6">
               <!-- 2 columns inside each of the column-->
               <div class="row">
-                <div class="col-md-5 review-img">
+                <div class="col-md-4 review-img">
                   <img src="/img/client-one.jpg" alt="">
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-8">
                   <blockquote>
                     <i class="fas fa-quote-left"></i>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                    <div>
+                    &nbsp;&nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                     incididunt ut labore et dolore magna aliqua. Quis eleifend quam adipiscing vitae proin 
                     sagittis nisl rhoncus mattis. Semper quis lectus nulla at. Eget lorem dolor sed viverra 
                     ipsum. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque. 
                     Semper risus in hendrerit gravida.
+                  </div>
                     <hr class="review-hr">
                     <cite>&#8212; Nadya, awesome client</cite>
                   </blockquote>
@@ -227,17 +222,19 @@
             <div class="col-md-6 review-img">
               <!-- 2 columns inside each of the column-->
               <div class="row">
-                <div class="col-md-5 review-img2">
+                <div class="col-md-4 review-img2">
                   <img src="/img/client-two.jpg" alt="">
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-8">
                   <blockquote>
                     <i class="fas fa-quote-left"></i>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                    <div>
+                    &nbsp;&nbsp;  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
                     labore et dolore magna aliqua. Nec ultrices dui sapien eget. In hac habitasse platea dictumst 
                     quisque. Tellus in hac habitasse platea dictumst. Fringilla phasellus faucibus scelerisque eleifend 
                     donec pretium. Libero nunc consequat interdum varius sit amet. Vitae tortor condimentum lacinia quis 
                     vel eros donec ac odio.
+                  </div>
                     <hr class="review-hr">
                     <cite>&#8212; Nadya, another awesome client</cite>
                   </blockquote>
@@ -256,12 +253,17 @@
           <!-- justify-content-center / to center five columns -->
           <div class="row justify-content-center">
             <div class="col-md-5 text-center">
-              <img src="/img/flower-logo.png" class="logo-img"alt="">
+              <img src="/img/flower-logo.png" class="logo-img"alt="flower company logo">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Commodo odio aenean sed adipiscing diam.</p>
                 <b>Contact Info</b>
                 <p>(888)-888-8888<br>email: info@ourmail.com</p>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a href="https://twitter.com/home" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                <hr class="socket">
+                &copy; Dita Pesek / DeltaForce14
             </div>
           </div>
         </footer>
